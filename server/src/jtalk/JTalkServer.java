@@ -18,13 +18,13 @@ public class JTalkServer {
 		if(DBC.Connect()) System.out.println("Database connected...");
 		else {
 			System.out.println("Can't connect to database... exiting.");
-			System.exit(0);
+			System.exit(1);
 		}
 		
 		if(Engine.Initialize()) System.out.println("Engine initialized...");
 		else {
 			System.out.println("Can't initialize server engine... exiting.");
-			System.exit(0);
+			System.exit(1);
 		}
 		//End of initializing section
 		
